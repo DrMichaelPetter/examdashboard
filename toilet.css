@@ -1,0 +1,47 @@
+/*.toilet-marker {
+    padding-left: 5em;
+    background: url("./images/toilet.svg") no-repeat center;
+    font-size: 200px;
+}
+
+.toilet-marker::after {
+    content: "X";
+    color: green;
+    opacity: 0;
+}
+
+#toggle:checked~.toilet-marker::after {
+    content: "X";
+    color: red;
+    opacity: 1;
+}*/
+
+.toilet-marker {
+    background: url("./images/toilet.svg") no-repeat center;
+    height: 20em;
+    width: 20em;
+}
+
+.crossed {
+    position: relative;
+    width: 20em;
+    height: 20em;
+}
+
+.crossed svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.crossed svg line {
+    stroke: rgb(255, 0, 0);
+    stroke-width: 15;
+}
+
+.info {
+    font-size: 22px;
+}

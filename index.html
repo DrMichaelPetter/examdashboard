@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="toilet.css">
+</head>
+<html>
+
+<body>
+    <div style="width:100%">
+        <div style="width:100%;text-align:center" class="info">
+            <h1>
+                <div id="subject" />
+            </h1>
+            <h2>
+                <div id="examiner" />
+            </h2>
+            <h2>05.08.2022</h2>
+        </div>
+        <div style="width:35%;text-align:center;float:left" class="info">
+            <div style="width:70%;padding-left: 5em;text-align:left">
+                <h3>Important</h3>
+                <ul>
+                    <li>Turn off all electronic devices and put them in your bag</li>
+                    <li>Prepare your Passport/student ID</li>
+                    <li>You can hand in early during the first 75mins</li>
+                    <li>Only one person at the WC at all times</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="width:20%;float:right;">
+            <article class="clockcase">
+                <div class="clock">
+                    <div class="hours-container">
+                        <div class="hours"></div>
+                    </div>
+                    <div class="minutes-container">
+                        <div class="minutes"></div>
+                    </div>
+                    <div class="seconds-container">
+                        <div class="seconds"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div style="width:20%;float:right;text-align:center">
+            <article>
+                <div id="app" onclick="startTimer()"></div>
+            </article>
+        </div>
+
+        <div style="width:25%;float:right;text-align:center">
+            <article>
+                <div class="crossed">
+                    <div class="toilet-marker"></div>
+                    <svg id="cross" onclick="one()">
+                        <line x1="0" y1="100%" x2="100%" y2="0" />
+                        <line x1="0" y1="0" x2="100%" y2="100%" />
+                    </svg>
+                </div>
+            </article>
+        </div>
+
+    </div>
+    <script src="countdown.js"></script>
+    <script src="ingeneral.js"></script>
+    <script src="clock.js"></script>
+    <script src="toilet.js"></script>
+</body>
+
+</html>
