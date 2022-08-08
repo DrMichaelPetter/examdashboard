@@ -4,12 +4,50 @@
     <link rel="stylesheet" href="countdown.css">
     <link rel="stylesheet" href="clock.css">
     <link rel="stylesheet" href="toilet.css">
+    <link rel="stylesheet" href="ingeneral.css">
 </head>
 <html>
 
 <body>
+
+    <!-- The Modal -->
+    <div id="helpmodal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closehelp">&times;</span>
+            <h2>Exam Dashboard</h2>
+            <p>
+                The exam dashboard lets you communicate useful information during an exam to students. Click on
+                <ul>
+                    <li><b>the flag</b> to start the countdown</li>
+                    <li><b>the toilet</b> to (un-)restrict the toilet access</li>
+                </ul>
+            </p>
+            <h3>Parameter:</h3>
+            <p> You can initialize the exam dashboard with some custom features; you need to give a few parameters to the URL, however:
+                <ul>
+                    <li><b>?id=IN2227</b> sets the IN???? Module number for the course</li>
+                    <li><b>?time=90</b> sets the remaining time for this exam</li>
+                </ul>
+                For example: <b><a href="http://www2.in.tum.de/~petter/examdashboard?id=in0003&time=180">http://www2.in.tum.de/~petter/examdashboard?id=in0003&time=180</a></b>
+            </p>
+            <p>
+                Warning: Do not change tabs on the browser, this pauses the countdown.
+            </p>
+            <p>
+                Warning: This is a beta version, use at your own risk
+            </p>
+        </div>
+
+    </div>
+
     <div style="width:100%">
+
         <div style="width:100%;text-align:center" class="info">
+            <div style="width:100%;height:100px;float:right">
+                <button id="helpbutton">?</button>
+            </div>
             <h1>
                 <div id="subject" />
             </h1>

@@ -24,3 +24,25 @@ request.onload = function() {
     document.getElementById("examiner").innerHTML = "Examiner: " + lecturedata[lectureID].examiner
     document.getElementById("subject").innerHTML = "Exam: " + lecturedata[lectureID].title + " (" + lectureID + ")"
 }
+
+// Get the modal
+var modal = document.getElementById("helpmodal");
+var btn = document.getElementById("helpbutton");
+var span = document.getElementsByClassName("closehelp")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
